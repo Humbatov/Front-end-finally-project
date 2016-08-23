@@ -8,6 +8,11 @@
   height: 100%;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+  button{
+    span{
+      background-color: #1ac6ff !important;
+    }
+  }
   img{
     width: 130px;
     height: 30px;
@@ -55,7 +60,7 @@
   }
   .navbar-brand{
     padding:0 !important;
-    margin: 20px 50px 10px 0 !important;
+    margin: 20px 50px 10px 5px !important;
     height: auto;
     img{
 
@@ -78,7 +83,7 @@
       }
     }
     h5{
-      font-size: 24px !important;
+      font-size: 24px ;
       font-weight: 300;
       margin-top: 20px;
       margin-bottom: 32px;
@@ -128,5 +133,26 @@
   background-color: #f0f0f0;
   li{
     padding: 0 15px;
+  }
+}
+@media (max-width: 767px){
+h1 {
+    font-size: 29px !important;
+}
+h5 {
+    font-size: 19.2px !important;
+  }
+}
+
+@media (max-width: 481px){
+  .col-md-12{
+    ul{
+      li{
+        a{
+          width: 100% !important;
+          margin: 10px 0 ;
+        }
+      }
+    }
   }
 }
