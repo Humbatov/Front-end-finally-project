@@ -22,11 +22,14 @@
     <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <!-- HOME section start   -->
+    <div class="upButton text-center">
+        <i class="fa fa-angle-up fa-3x"></i>
+    </div>
     <section id="home">
         <nav class="navbar ">
             <div class="container">
@@ -42,14 +45,14 @@
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">FEATURES</a></li>
-                        <li><a href="#">PRICES</a></li>
-                        <li><a href="#">FEEDBACK</a></li>
-                        <li><a href="#">TEAM</a></li>
-                        <li><a href="#">CONTACTS</a></li>
+                    <ul class="nav navbar-nav " role="tablist">
+                        <li class="active"><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#features">FEATURES</a></li>
+                        <li><a href="#prices">PRICES</a></li>
+                        <li><a href="#feedback">FEEDBACK</a></li>
+                        <li><a href="#team">TEAM</a></li>
+                        <li><a href="#contacts">CONTACTS</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">Login </a></li>
@@ -87,11 +90,187 @@
     <!-- HOME section end   -->
 
     <!-- ABOUT section start   -->
-    <section id="about"></section>
+    <section id="about" class="text-center">
+        <div class="container text-center">
+            <ul class="nav nav-tabs text-center tabs">
+                <li><a href="#">first tab</a></li>
+                <li><a href="#">second tab</a></li>
+                <li><a href="#">third tab</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="assets/img/people.jpg" alt="" />
+                </div>
+                <div class="col-md-6">
+                    <h3>FOR EVERY <span class="blueColor">STARTUP</span></h3>
+                    <p class="title">Lorem ipsum dolor sit atmet sit dolor greand fdanrh
+                        <br>sdfs sit atmet sit dolor greand fdanrh sdfs</p>
+                    <p>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident,
+                        nihilamane umquam magnum ac cognitione.</p>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row text-left">
+                <div class="col-md-6">
+                    <h3>NEW AGE <span class="blueColor">TECHNOLOGY</span></h3>
+                    <p class="title">Lorem ipsum dolor sit atmet sit dolor greand fdanrh
+                        <br>sdfs sit atmet sit dolor greand fdanrh sdfs</p>
+                    <p>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident,
+                        nihilamane umquam magnum ac cognitione.</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive" src="assets/img/content_image1.png" alt="" />
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row text-right">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="assets/img/helmet.jpg" alt="" />
+                </div>
+                <div class="col-md-6">
+                    <h3>HANG <span class="blueColor">ON TO</span> YER HELMET</h3>
+                    <p class="title">Lorem ipsum dolor sit atmet sit dolor greand fdanrh
+                        <br>sdfs sit atmet sit dolor greand fdanrh sdfs</p>
+                    <p>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident,
+                        nihilamane umquam magnum ac cognitione.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- ABOUT section end   -->
 
     <!-- FEATURES section start   -->
-    <section id="features"></section>
+    <section id="features">
+        <section class="featuresPreview">
+            <div class="container">
+                <ul class="">
+                    <li>
+                        <a href="#">
+                            <div>
+                                <h4>LOREM DOLOR</h4>
+                                <p>
+                                    Sit amet, consectetur adipiscing elit
+                                    <br> hac divisione rem ipsam prorsus
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <h4>LOREM DOLOR</h4>
+                                <p>
+                                    Sit amet, consectetur adipiscing elit
+                                    <br> hac divisione rem ipsam prorsus
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <h4>LOREM DOLOR</h4>
+                                <p>
+                                    Sit amet, consectetur adipiscing elit
+                                    <br> hac divisione rem ipsam prorsus
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="clearFix"></li>
+                </ul>
+                <div class="featuresImg">
+                    <img class="img-responsive" src="assets/img/rich_features_1.png" alt="" />
+                </div>
+            </div>
+        </section>
+        <section class="featuresList text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <i class="icon icon-office-44"></i>
+                        <h6>FEATURE 1</h6>
+                        <p>
+                            Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <i class="icon icon-shopping-18 "></i>
+                        <h6>FEATURE 2</h6>
+                        <p>
+                            Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <i class="icon icon-seo-icons-27"></i>
+                        <h6>FEATURE 3</h6>
+                        <p>
+                            Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <i class="icon icon-office-24"></i>
+                        <h6>FEATURE 4</h6>
+                        <p>
+                            Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <i class="icon icon-graphic-design-13"></i>
+                        <h6>FEATURE 5</h6>
+                        <p>
+                            Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <i class="icon icon-arrows-37 "></i>
+                        <h6>FEATURE 6</h6>
+                        <p>
+                            Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <i class="icon icon-badges-votes-14"></i>
+                        <h6>FEATURE 7</h6>
+                        <p>
+                            Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <i class="icon icon-badges-votes-16"></i>
+                        <h6>FEATURE 8</h6>
+                        <p>
+                            Sit amet, consectetur adipiscing elit. In hac divisione rem ipsam prorsus probo elegantiam desidero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featuresSubscribe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-5 text-center">
+                        <h2>GET LIVE UPDATES</h2>
+                        <p>No spam promise - only latest news and prices!</p>
+                    </div>
+                    <div class="col-md-12 col-lg-7">
+                        <form class="text-center" action="index.html" method="post">
+                            <input type="text" name="name" placeholder="Your name">
+                            <input type="text" name="email" placeholder="your@email.com">
+                            <input class="btn" type="button" name="subscribe" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
     <!-- FEATURES section end   -->
 
     <!-- PRICES section start   -->
@@ -278,12 +457,12 @@
         <div class="contacts">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-sm-4 col-md-4">
                         <img ckass="img-responsive" src="assets/img/logo-white.png" alt="" />
                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco. Qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Nisi ut aliquid ex ea commodi consequatur?</p>
                         <p>John Doeson, Founder.</p>
                     </div>
-                    <div class="col-md-5 text-center">
+                    <div class="col-sm-4 col-md-5 text-center">
                         <p class="spanHeader">SOCIAL NETWORKS</p>
                         <ul class="list-inline socialIcons">
                             <li><a href="#"><i class="icon icon-socialmedia-08"></i></a></li>
@@ -298,7 +477,7 @@
                             <li><a href="#"><i class="icon icon-socialmedia-08"></i></a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-4 col-md-3">
                         <p class="text-center spanHeader">SOCIAL NETWORKS</p>
                         <ul class="ourContacts">
                             <li><i class="icon icon-chat-messages-14"></i><a href="#">info@startup.ly
